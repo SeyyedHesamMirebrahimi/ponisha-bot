@@ -11,9 +11,9 @@ use Symfony\Component\Dotenv\Dotenv;
 use Symfony\Component\ErrorHandler\Debug;
 use Symfony\Component\HttpFoundation\Request;
 
-require getcwd() . '/core' . '/vendor/autoload.php';
+require getcwd() . '/app' . '/vendor/autoload.php';
 
-(new Dotenv())->bootEnv(getcwd() . '/core' . '/.env');
+(new Dotenv())->bootEnv(getcwd() . '/app' . '/.env');
 
 if ($_SERVER['APP_DEBUG']) {
     umask(0000);
